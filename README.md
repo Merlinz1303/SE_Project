@@ -2,12 +2,12 @@
 
 NavBar (Top+Button)
 
-code flie - Navbar.js
-          - Navbar.css
-          - navbar_Footer.js
-          - navbar_Footer.css
+- code flie - Navbar.js
+            - Navbar.css
+            - navbar_Footer.js
+            - navbar_Footer.css
 
-other - Logo picture (folder Logo)
+- other - Logo picture (folder Logo)
 
 ==================================
 
