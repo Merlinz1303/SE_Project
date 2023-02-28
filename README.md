@@ -10,6 +10,8 @@ NavBar (Top+Button)
 
 #### Update #####
 
+- Navbar ( Header )
+  Date 26.02.2023
 - Navbar_Footer (code flie .js and .css) 
   Date 28.02.2023 
 
@@ -18,7 +20,7 @@ NavBar (Top+Button)
 
 ##### Bug #####
 
-- Navbar (Top) User can't " move to left side or paddingn-left "
+- Navbar ( Header ) User can't " move to left side or paddingn-left "
   Date 28.02.2023
 
 
