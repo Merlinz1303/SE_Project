@@ -2,14 +2,11 @@
 
 NavBar (Top+Button)
 
-- code flie - Navbar.js
-            - Navbar.css
-            - navbar_Footer.js
-            - navbar_Footer.css
+- code flie (1.Navbar.js , 2.Navbar.css , 3.navbar_Footer.js , 4.navbar_Footer.css)
 
-- other - Logo picture (folder Logo)
+- other ( Logo picture (folder Logo))
 
-==================================
+====================================================================================
 
 #### Update #####
 
@@ -17,7 +14,7 @@ NavBar (Top+Button)
   Date 28.02.2023 
 
 
-=================================
+===================================================================================
 
 ##### Bug #####
 
