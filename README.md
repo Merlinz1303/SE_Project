@@ -7,7 +7,7 @@ NavBar (Top+Button)
 
 - other ( Logo picture (folder Logo))
 
--Back up (Code{css,js} : 1.App , 2.Index , 3.Select_car , 4.Booking , 5.Contact , 6.Information ) + (images)
+- Back up (Code{css,js} : 1.App , 2.Index , 3.Select_car , 4.Booking , 5.Contact , 6.Information ) + (images)
 
 ====================================================================================
 
