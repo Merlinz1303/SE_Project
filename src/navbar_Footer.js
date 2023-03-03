@@ -1,6 +1,6 @@
 import './navbar_Footer.css';
-
-function navbar_Footer(){
+import { Link ,useMatch, useResolvedPath} from 'react-router-dom';
+export default function navbar_Footer(){
     return(
         <div className='nav_foot'>
             <div className='logo' >
@@ -8,18 +8,10 @@ function navbar_Footer(){
             </div>  
             <ul>
                 <a className='menu'>เมนู</a>
-                <li className='active'>
-                    <a href='main' className='menutext'>หน้าหลัก</a>
-                </li>
-                <li className='active'>
-                    <a href='information' className='menutext'>เกี่ยวกับ</a>
-                </li>
-                <li className='active'>
-                    <a href='register' className='menutext'>วิธีสมัคร</a>
-                </li>
-                <li className='active'>
-                    <a href='contact' className='menutext'>ติดต่อ/สอบถาม</a>
-                </li>
+                <CustomLink2 to ='/Main' className='menutext'>หน้าหลัก</CustomLink2>
+                <CustomLink2 to ='/Information' className='menutext'>เกี่ยวกับ</CustomLink2>  
+                <CustomLink2 to ='/Register' className='menutext'>วิธีสมัคร</CustomLink2>
+                <CustomLink2 to ='/Contact' className='menutext'>ติดต่อ/สอบถาม</CustomLink2>
             </ul>
             <ul>
                 <a className='menu'>ติดต่อเรา</a>
@@ -34,4 +26,15 @@ function navbar_Footer(){
     );
 }
 
-export default navbar_Footer
+function CustomLink2({ to,children, ...proops }) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end:true})
+    return(
+        <li className ={isActive ? "active" : ""}>
+            <Link to = {to} {...proops}>
+                {children}
+            </Link>
+        </li>
+    )
+
+}
