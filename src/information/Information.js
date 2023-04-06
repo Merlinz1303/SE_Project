@@ -13,8 +13,9 @@ function information(){
             // email: "jamkapp556@gmail.com",
           })
           .then((response) => {
-            console.log(response.data);
+            /* console.log(response.data); */
             sendData(response.data[0])
+            console.log(data);
           });
       }, []);
       
@@ -22,16 +23,16 @@ function information(){
         <div className='information_main'>
             <p className='information_text1'>ข้อมูลส่วนตัว</p>
             <div className='profile'>
-                <img  src= {("/images/Profile_pic.png")} width={400} height={400}></img>
+                <img className='profileCir' src={data.profile} width={400}  height={400}></img>
             </div>
             <p className='information_text1'>{data.username}</p>
             <div className='bg_information'>
                 <p className='information_text3'>ข้อมูลรูปบัตรประชาชน</p>
                 <p className='information_text4'>ข้อมูลรูปถ่าย</p>
                 <p className='information_text4'>ข้อมูลรูปใบขับขี่</p>
-                <img className='card_img'  src={("/images/card1.png")}></img>
-                <img className = 'card_img' src={("/images/card2.png")}></img>
-                <img claseeName = 'card_img' src={("/images/card3.png")}></img>
+                <img className='card_img'  src={data.peoplecard}></img>
+                <img className = 'card_img2 pic' src={data.profile}></img>
+                <img claseeName = 'card_img' src={data.drivercard}></img>
             </div>
             <p className='information_text2'>ข้อมูลส่วนตัว</p>
             <div className='bg_information2'>
@@ -47,21 +48,21 @@ function information(){
             </div>
             <p className = 'information_text2'>ที่อยู่</p>
             <div className=' bg_information3'>
-                <p className='box3 text-box3'>ที่อยู่</p>
+                <p className='box3 text-box3'>{data.Address}</p>
             </div>
             <div className='bg_information4'>
-                <p className='box4 text-box' > ตำบล</p>
-                <p className='box4 text-box'>อำเภอ</p>
-                <p className='box4 text-box'>จังหวัด</p>
-                <p className='box4 text-box'>รหัสไปรษณีย์</p> 
+                <p className='box4 text-box' > {data.subdistrict}</p>
+                <p className='box4 text-box'>{data.city}</p>
+                <p className='box4 text-box'>{data.province}</p>
+                <p className='box4 text-box'>{data.zipcode}</p> 
             </div>
             <p className='information_text2'>ข้อมูลบริษัท</p>
             <div className='bg_information5'>
-                <p className='box5 text-box2'>asd</p>
-                <p className='box5 text-box2'>asd</p>
-                <p className='box5 text-box2'>asd</p>
-                <p className='box5 text-box2'>asd</p>
-                <p className='box5 text-box2'>asd</p>
+                <p className='box5 text-box'>ชื่อบริษัท : {data.companyname}</p>
+                <p className='box5 text-box'>ประเภทธุรกิจ : {data.companytype}</p>
+                <p className='box5 text-box'>email : {data.companyemail}</p>
+                <p className='box5 text-box'>เบอร์โทร : {data.companytel}</p>
+                <p className='box5 text-box'>เงินเดือน : {data.salary}</p>
             </div>
             <div className='bg_informationFree'></div>
         </div>

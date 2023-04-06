@@ -7,6 +7,9 @@ import Information from '../information/Information';
 import Contact from '../contact/Contact';
 import {Route, Routes } from 'react-router-dom';
 
+
+
+
 export default function App() {
   return (
     <div className="App">
@@ -21,5 +24,4 @@ export default function App() {
     </div>
   );
 }
-
 
